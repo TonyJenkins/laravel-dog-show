@@ -9,9 +9,7 @@
                 <h1>Poppleton Dog Show: {{ $dog -> name }}</h1>
             </div>
             <div>
-                <p class="nav-button">
-                    <a href="/"><i class="fas fa-paw mr-2"></i>Home</a>
-                </p>
+                <x-home-button />
             </div>
         </div>
 
