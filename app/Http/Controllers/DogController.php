@@ -3,18 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Dog;
+
 use Illuminate\Http\Request;
 
-class DogController extends Controller
-{
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
+class DogController extends Controller  {
+
+    public function index () {
+
+        $dogs = Dog::query () -> orderByDesc ('score') -> paginate (3);
+
+        return view ('dogs.index', ['dogs' => $dogs]);
+
     }
 
     /**
