@@ -8,9 +8,11 @@ use Illuminate\Http\Request;
 
 class DogController extends Controller  {
 
+    const DOGS_ON_MAIN_PAGE = 9;
+
     public function index () {
 
-        $dogs = Dog::query () -> orderByDesc ('score') -> paginate (3);
+        $dogs = Dog::query () -> orderByDesc ('score') -> paginate (self::DOGS_ON_MAIN_PAGE);
 
         return view ('dogs.index', ['dogs' => $dogs]);
 
