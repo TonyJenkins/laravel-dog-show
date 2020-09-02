@@ -15,9 +15,10 @@ $factory->define(Dog::class, function (Faker $faker) {
 
     return [
 
-        'name' => $faker -> firstName (),
+        'name' => $faker -> firstName,
         'breed' => $breeds [array_rand ($breeds)],
         'score' => $faker -> randomFloat (2, 0, 10),
+        'owner' => $faker -> name,
 
     ];
 });

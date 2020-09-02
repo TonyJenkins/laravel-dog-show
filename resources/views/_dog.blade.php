@@ -6,12 +6,15 @@
                 {{ $dog -> name }}
             </h2>
 
-            <p>
+            <p class="font-bold">
                 {{ $dog -> breed }}
             </p>
 
             <p>
                 Score: {{ $dog -> score }}
+            </p>
+            <p class="mt-4">
+                Owner: {{ $dog -> owner }}
             </p>
         </div>
         <div class="w-1/4">
