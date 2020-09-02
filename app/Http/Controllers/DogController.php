@@ -68,14 +68,11 @@ class DogController extends Controller  {
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Dog  $dog
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Dog $dog)
-    {
-        //
+    public function destroy (Dog $dog) {
+
+        $dog -> delete ();
+
+        return redirect () -> route ('index');
+
     }
 }

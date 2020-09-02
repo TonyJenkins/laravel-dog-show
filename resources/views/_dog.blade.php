@@ -20,17 +20,25 @@
         </div>
         <div class="w-1/4 my-auto">
             <div class="float-right">
+
                 <p class="crud-button mb-2">
                     <a href="{{ $dog -> path }}">
                         <i class="fas fa-dog"></i>
                     </a>
                 </p>
+
                 <p class="crud-button mb-2">
                     <i class="fas fa-edit"></i>
                 </p>
-                <p class="crud-button">
-                    <i class="fas fa-dumpster"></i>
-                </p>
+
+                <form class="inline" method="post" action="{{ $dog -> path }}">
+                    @method ('DELETE')
+                    @csrf
+                    <button type="submit">
+                        <i class="fas fa-dumpster inline crud-button"></i>
+                    </button>
+                </form>
+
             </div>
         </div>
     </div>
