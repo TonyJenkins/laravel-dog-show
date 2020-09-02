@@ -1,5 +1,9 @@
-@import "tailwindcss/base";
+@tailwind base;
 
-@import "tailwindcss/components";
+@tailwind components;
 
-@import "tailwindcss/utilities";
+.crud-button {
+    @apply .text-xs .py-2 px-2 .rounded-lg .bg-blue-200 border rounded border-gray-500;
+}
+
+@tailwind utilities;

@@ -11,9 +11,13 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-    
+
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+
+    <!-- Font Awesome Free -->
+    <script src="https://kit.fontawesome.com/98f08a48e1.js" crossorigin="anonymous"></script>
+
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none">
     <div id="app">
