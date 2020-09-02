@@ -6,6 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Dog extends Model  {
 
+    protected $fillable = [
+        'name',
+        'breed',
+        'score',
+        'owner',
+        'notes',
+    ];
+
     public function path () {
 
         return "/dog/" . $this -> id . "/";

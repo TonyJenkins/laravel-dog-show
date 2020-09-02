@@ -19,3 +19,6 @@ Route::get ('/', 'DogController@index') -> name ('index');
 
 Route::get ('/dog/{dog}/', 'DogController@show');
 Route::delete ('/dog/{dog}', 'DogController@destroy');
+
+Route::get ('/dog/', 'DogController@create');
+Route::post ('/dog/', 'DogController@store');

@@ -18,25 +18,33 @@ class DogController extends Controller  {
 
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+    public function create () {
+
+        return view ('dogs.create');
+
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
+    public function store (Request $request) {
+
+        request () -> validate ([
+            'name' => 'required|min:2|max:32',
+            'breed' => 'required|min:4|max:32',
+            'owner' => 'required|min:6|max:32',
+        ]);
+
+        $attributes = $request -> all (
+            'name',
+            'breed',
+            'owner',
+            'notes'
+        );
+
+        $attributes ['score'] = 0;
+
+        $dog = Dog::create ($attributes);
+
+        return redirect ($dog -> path);
+
     }
 
     public function show (Dog $dog) {
