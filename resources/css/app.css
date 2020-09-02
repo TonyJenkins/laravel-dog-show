@@ -6,4 +6,8 @@
     @apply .text-xs .py-2 px-2 .rounded-lg .bg-blue-200 border rounded border-gray-500;
 }
 
+.nav-button {
+    @apply .text-xl .font-bold .py-2 px-2 .rounded-lg .bg-blue-200 border rounded border-gray-500;
+}
+
 @tailwind utilities;

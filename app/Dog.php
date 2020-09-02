@@ -6,9 +6,20 @@ use Illuminate\Database\Eloquent\Model;
 
 class Dog extends Model  {
 
-    public function image_url () {
+    public function path () {
 
-        return "https://placedog.net/150/150/g?id=" . $this -> id;
+        return "/dog/" . $this -> id . "/";
+    }
+
+    public function getPathAttribute () {
+
+        return $this -> path ();
+
+    }
+
+    public function image_url ($size = 150) {
+
+        return "https://placedog.net/{$size}/{$size}/g?id=" . $this -> id;
 
     }
 }

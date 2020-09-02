@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get ('/', 'DogController@index') -> name ('index');
+
+Route::get ('/dog/{dog}/', 'DogController@show');

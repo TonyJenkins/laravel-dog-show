@@ -37,15 +37,10 @@ class DogController extends Controller  {
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Dog  $dog
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Dog $dog)
-    {
-        //
+    public function show (Dog $dog) {
+
+        return view ('dogs.show', compact ('dog'));
+
     }
 
     /**

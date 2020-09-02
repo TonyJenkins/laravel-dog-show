@@ -21,7 +21,9 @@
         <div class="w-1/4 my-auto">
             <div class="float-right">
                 <p class="crud-button mb-2">
-                    <i class="fas fa-dog"></i>
+                    <a href="{{ $dog -> path }}">
+                        <i class="fas fa-dog"></i>
+                    </a>
                 </p>
                 <p class="crud-button mb-2">
                     <i class="fas fa-edit"></i>
