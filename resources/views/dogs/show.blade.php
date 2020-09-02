@@ -10,7 +10,7 @@
             </div>
             <div>
                 <p class="nav-button">
-                    <i class="fas fa-paw mr-2"></i><a href="/">Home</a>
+                    <a href="/"><i class="fas fa-paw mr-2"></i>Home</a>
                 </p>
             </div>
         </div>
