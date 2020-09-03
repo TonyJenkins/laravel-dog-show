@@ -10,7 +10,7 @@
                         {{ __('Register') }}
                     </div>
 
-                    <form class="w-full p-6" method="POST" action="{{ route('register') }}">
+                    <form class="w-full p-6" method="POST" action="{{ route('register') }}" autocomplete="off">
                         @csrf
 
                         <div class="flex flex-wrap mb-6">
@@ -18,7 +18,9 @@
                                 {{ __('Name') }}:
                             </label>
 
-                            <input id="name" type="text" class="form-input w-full @error('name')  border-red-500 @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                            <input id="name" type="text" class="form-input w-full
+                                   @error('name')  border-red-500 @enderror" name="name" value="{{ old('name') }}"
+                                   required autocomplete="off" autofocus data-lpignore="true">
 
                             @error('name')
                                 <p class="text-red-500 text-xs italic mt-4">
@@ -32,7 +34,10 @@
                                 {{ __('E-Mail Address') }}:
                             </label>
 
-                            <input id="email" type="email" class="form-input w-full @error('email') border-red-500 @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                            <input id="email" type="email" class="form-input w-full
+                                   @error('email') border-red-500 @enderror" name="email" value="{{ old('email') }}"
+                                   required autocomplete="off"
+                                   data-lpignore="true">
 
                             @error('email')
                                 <p class="text-red-500 text-xs italic mt-4">
@@ -46,7 +51,9 @@
                                 {{ __('Password') }}:
                             </label>
 
-                            <input id="password" type="password" class="form-input w-full @error('password') border-red-500 @enderror" name="password" required autocomplete="new-password">
+                            <input id="password" type="password" class="form-input w-full
+                                   @error('password') border-red-500 @enderror" name="password" required
+                                   autocomplete="off" data-lpignore="true">
 
                             @error('password')
                                 <p class="text-red-500 text-xs italic mt-4">
@@ -60,7 +67,8 @@
                                 {{ __('Confirm Password') }}:
                             </label>
 
-                            <input id="password-confirm" type="password" class="form-input w-full" name="password_confirmation" required autocomplete="new-password">
+                            <input id="password-confirm" type="password" class="form-input w-full" name="password_confirmation"
+                                   required autocomplete="off" data-lpignore="true">
                         </div>
 
                         <div class="flex flex-wrap">
