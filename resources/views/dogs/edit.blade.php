@@ -22,7 +22,8 @@
                     Dog's Name
                 </label>
 
-                <input class="block w-2/5" type="text" name="name" data-lpignore="true"
+                <input class="block w-2/5 @error ('name') border border-red-500 @enderror"
+                       type="text" name="name" data-lpignore="true"
                        autocomplete="off" value="{{ $dog -> name }}" />
 
                 @error ('name')
@@ -37,7 +38,7 @@
                 <label class="block" for="owner">
                     Current Score
                 </label>
-                <input class="block w-1/5"
+                <input class="block w-1/5 @error ('score') border border-red-500 @enderror"
                        type="text" name="score" data-lpignore="true"
                        autocomplete="off" value="{{ $dog -> score }}" />
 
@@ -54,7 +55,7 @@
         <div class="flex flex-wrap">
             <div class="w-1/2">
                 <label class="block" for="breed">Breed</label>
-                <input class="block w-4/5"
+                <input class="block w-4/5 @error ('breed') border border-red-500 @enderror"
                        type="text" name="breed" data-lpignore="true"
                        autocomplete="off" value="{{ $dog -> breed }}" />
 
@@ -70,7 +71,7 @@
                 <label class="block" for="owner">
                     Owner
                 </label>
-                <input class="block w-4/5"
+                <input class="block w-4/5  @error ('owner') border border-red-500 @enderror"
                        type="text" name="owner" data-lpignore="true"
                        autocomplete="off" value="{{ $dog -> owner }}" />
 

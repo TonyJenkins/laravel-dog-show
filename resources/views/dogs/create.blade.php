@@ -20,8 +20,8 @@
                     Dog's Name
                 </label>
 
-                <input class="block w-2/5" type="text" name="name" data-lpignore="true"
-                       autocomplete="off" placeholder="e.g. Yappy" />
+                <input class="block w-2/5 @error ('name') border border-red-500 @enderror"
+                       type="text" name="name" data-lpignore="true" autocomplete="off" placeholder="e.g. Yappy" />
 
                 @error ('name')
                     <div class="alert-message">
@@ -35,7 +35,7 @@
         <div class="flex flex-wrap">
             <div class="w-1/2">
                 <label class="block" for="breed">Breed</label>
-                <input class="block w-4/5"
+                <input class="block w-4/5 @error ('breed') border border-red-500 @enderror"
                        type="text" name="breed" data-lpignore="true"
                        autocomplete="off" placeholder="e.g. Yorkshire Terrier" />
 
@@ -51,7 +51,7 @@
                 <label class="block" for="owner">
                     Owner
                 </label>
-                <input class="block w-4/5"
+                <input class="block w-4/5 @error ('owner') border border-red-500 @enderror"
                        type="text" name="owner" data-lpignore="true"
                        autocomplete="off" placeholder="e.g. Mr Humphrey Smith" />
 
