@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section ('headier')
+@section ('header')
     <div class="flex justify-between">
         <div class="text-4xl mb-8">
             <h1>Poppleton Dog Show: Leaderboard</h1>
