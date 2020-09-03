@@ -30,4 +30,10 @@ class Dog extends Model  {
         return "https://placedog.net/{$size}/{$size}/g?id=" . $this -> id;
 
     }
+
+    public function formatted_notes () {
+
+        return paragraphs_as_html ($this -> notes, 4);
+
+    }
 }

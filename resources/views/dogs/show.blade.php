@@ -32,9 +32,7 @@
             <h2 class="font-bold mb-4">
                 Dog Notes
             </h2>
-            <p>
-                {{ $dog -> notes }}
-            </p>
+                {!! $dog -> formatted_notes () !!}
         </div>
     </div>
 
