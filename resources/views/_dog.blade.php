@@ -28,7 +28,9 @@
                 </p>
 
                 <p class="crud-button mb-2">
-                    <i class="fas fa-edit"></i>
+                    <a href="{{ $dog -> path ('edit')}}">
+                        <i class="fas fa-edit"></i>
+                    </a>
                 </p>
 
                 <form class="inline" method="post" action="{{ $dog -> path }}">

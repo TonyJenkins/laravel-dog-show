@@ -14,9 +14,9 @@ class Dog extends Model  {
         'notes',
     ];
 
-    public function path () {
+    public function path ($append = "") {
 
-        return "/dog/" . $this -> id . "/";
+        return "/dog/" . $this -> id . "/" . $append;
     }
 
     public function getPathAttribute () {

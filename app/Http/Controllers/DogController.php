@@ -53,27 +53,25 @@ class DogController extends Controller  {
 
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Dog  $dog
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Dog $dog)
-    {
-        //
+    public function edit (Dog $dog) {
+
+        return view ('dogs.edit', compact ('dog'));
+
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Dog  $dog
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Dog $dog)
-    {
-        //
+    public function update (Request $request, Dog $dog) {
+
+        $attributes = request () -> validate ([
+            'name' => 'required|min:2|max:32',
+            'breed' => 'required|min:4|max:32',
+            'owner' => 'required|min:6|max:32',
+            'score' => 'numeric|min:0|max:10',
+        ]);
+
+        $dog -> update ($attributes);
+
+        return redirect () -> route ('index');
+
     }
 
     public function destroy (Dog $dog) {

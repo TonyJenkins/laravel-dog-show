@@ -2,23 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 Auth::routes();
 
 Route::get ('/', 'DogController@index') -> name ('index');
 
 Route::get ('/dog/{dog}/', 'DogController@show');
-Route::delete ('/dog/{dog}', 'DogController@destroy');
+Route::delete ('/dog/{dog}/', 'DogController@destroy');
 
 Route::get ('/dog/', 'DogController@create');
 Route::post ('/dog/', 'DogController@store');
+
+Route::get ('/dog/{dog}/edit', 'DogController@edit');
+Route::patch ('/dog/{dog}/', 'DogController@update');
