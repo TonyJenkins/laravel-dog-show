@@ -53,7 +53,7 @@
                 </label>
                 <input class="block w-4/5"
                        type="text" name="owner" data-lpignore="true"
-                       autocomplete="off" placeholder="e.g. Mr Humphrey Smith">
+                       autocomplete="off" placeholder="e.g. Mr Humphrey Smith" />
 
                 @error ('owner')
                     <div class="alert-message">
