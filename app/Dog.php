@@ -27,7 +27,7 @@ class Dog extends Model  {
 
     public function image_url ($size = 150) {
 
-        return "https://placedog.net/{$size}/{$size}/g?id=" . $this -> id;
+        return fake_image_url ($this -> id, $size);
 
     }
 

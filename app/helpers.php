@@ -12,3 +12,9 @@ function paragraphs_as_html ($str, $margin) {
     return $open_tag . str_replace ("\n\n", $open_tag . "</p>", $str) . "</p>";
 
 }
+
+function fake_image_url ($id, $size) {
+
+    return "https://placedog.net/{$size}/{$size}/g?id=" . $id;
+
+}
