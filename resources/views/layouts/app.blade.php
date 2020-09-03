@@ -18,6 +18,9 @@
     <!-- Font Awesome Free -->
     <script src="https://kit.fontawesome.com/98f08a48e1.js" crossorigin="anonymous"></script>
 
+    <!-- Wow! Such favicon! -->
+    <link rel="icon" type="image/png" href="{{ asset ('images/doge.png') }}" />
+
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none">
     <div id="app">
