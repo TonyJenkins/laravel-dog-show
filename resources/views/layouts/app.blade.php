@@ -51,7 +51,12 @@
             </div>
         </nav>
 
-        @yield('content')
+        <div class="container mx-auto">
+
+            @yield('header')
+            @yield('content')
+
+        </div>
     </div>
 </body>
 </html>
