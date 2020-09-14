@@ -23,7 +23,8 @@ class DogDetailsEmail extends Mailable  {
 
     public function build () {
 
-        return $this -> view ('emails.dogs.details');
+        return $this -> view ('emails.dogs.details')
+                     -> subject ('Your Dog Details Request');
 
     }
 }
