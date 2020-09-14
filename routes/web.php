@@ -17,4 +17,6 @@ Route::middleware ('auth') -> group (function () {
     Route::get ('/dog/{dog}/edit', 'DogController@edit');
     Route::patch ('/dog/{dog}/', 'DogController@update');
 
+    Route::get ('/dog/{dog}/email', 'MailController@sendDogDetails');
+
 });

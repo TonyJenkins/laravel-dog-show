@@ -2,11 +2,12 @@
 
 @section ('header')
 
-    <div class="flex justify-between">
-        <div class="text-4xl mb-8">
+    <div class="flex justify-between mb-8">
+        <div class="text-4xl">
             <h1>Poppleton Dog Show: {{ $dog -> name }}</h1>
         </div>
-        <div>
+        <div class="flex">
+            <x-details-button :dog="$dog"/>
             <x-home-button />
         </div>
     </div>

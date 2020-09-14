@@ -6,9 +6,9 @@
             <h1>Poppleton Dog Show: Leaderboard</h1>
         </div>
         <div>
-            <p class="nav-button mr-2">
+            <div class="nav-button mr-2">
                 <a href="/dog/"><i class="fas fa-paw mr-2"></i>Add New Dog</a>
-            </p>
+            </div>
         </div>
     </div>
 @endsection
