@@ -16,7 +16,7 @@
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
     <!-- Font Awesome Free -->
-    <script src="https://kit.fontawesome.com/98f08a48e1.js" crossorigin="anonymous"></script>
+    <script src="{{ env ('FONT_AWESOME_URL') }}" crossorigin="anonymous"></script>
 
     <!-- Wow! Such favicon! -->
     <link rel="icon" type="image/png" href="{{ asset ('images/doge.png') }}" />
