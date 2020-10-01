@@ -25,4 +25,4 @@ The following settings are required:
 
 `$ php artisan serve`
 
-App will be available at the URI displayed.
+App will be available at the URL displayed.
