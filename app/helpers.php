@@ -21,6 +21,6 @@ function paragraphs_as_html ($str, $margin) {
 function fake_image_url ($id, $size) {
 
     return "https://placedog.net/{$size}/{$size}/g?id=" . $id;
-
+//    return "http://place-puppy.com/" . $size . "x" . $size;
 }
 
