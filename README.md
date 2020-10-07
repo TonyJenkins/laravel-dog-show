@@ -5,6 +5,8 @@ A simple Laravel app to illustrate CRUD operations on a single model.
 
 ## Environment and Config
 
+The first stage is to make a new environment file:
+
 `$ cp .env.example .env`
 
 The following settings are required:
