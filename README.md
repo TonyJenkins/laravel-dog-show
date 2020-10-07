@@ -10,7 +10,7 @@ A simple Laravel app to illustrate CRUD operations on a single model.
 The following settings are required:
 
 - A database connection, with username and password. 
-  MySQL or MariaDB are fine. [XAMPP](https://www.apachefriends.org/index.html)
+  MySQL or MariaDB will be fine. [XAMPP](https://www.apachefriends.org/index.html)
   recommended.
 - Account details for [Mailtrap](https://mailtrap.io/)
 - A URL for a free account at [Fontawesome](https://fontawesome.com/)
