@@ -13,7 +13,7 @@
     </p>
 
     <p>
-        Thank you for request details of your favourite dog at this year's show.
+        Thank you for requesting details of your favourite dog at this year's show.
     </p>
 
     <img src="{{ $dog -> image_url (200) }}" />
